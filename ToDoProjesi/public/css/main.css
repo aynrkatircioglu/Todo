@@ -1,0 +1,30 @@
+body {
+    background-color: #319ccf;
+}
+nav {
+    background-color: rgb(244, 185, 66);
+}
+
+.table-colon{
+    min-height: 500px;
+}
+
+.table-title {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.table-head-box {
+    background-color: #e2f2ff;
+}
+.table-head-color {
+    color: #175fb8;
+}
+
+.table-item-font {
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.table-inprocess {
+    background-color: #e7edd4;
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "kullaniciNo": 1,
+    "kullaniciAd": "akullanicisi",
+    "kullaniciSifre": "a123456",
+    "gorevler": [
+      {
+        "id": "6c84fb90-12c4-11e1-840d-7b25c5ee775a",
+        "ad": "E-Ticaret sitesi tasarımı çizilecektir",
+        "kategori": "Tasarım",
+        "baslangicTarih": "01/01/2021",
+        "bitisTarih": "01/15/2021",
+        "durum": "beklemede",
+        "aciklama": "İçerisinde organik meyve ve sebze satışı yapılacak bir E-ticaret sitesi için arayüz tasarımı yapılacaktır."
+      },
+      {
+        "id": "8x84fb90-12c4-11e1-840d-7b25c5ee771a",
+        "ad": "E-Ticaret sitesinin webservisi geliştirilecektir",
+        "kategori": "Kodlama",
+        "baslangicTarih": "01/02/2021",
+        "bitisTarih": "01/11/2021",
+        "durum": "beklemede",
+        "aciklama": "E-Ticaret sitesinin ön planında kullanmak üzere bir restapi geliştirilecek ve dökümanı hazırlanacaktır."
+      },
+      {
+        "id": "1a84fb90-12c4-11e1-840d-7b25c5ee778n",
+        "ad": "Bir To Do projesi test edilecektir",
+        "kategori": "Test",
+        "baslangicTarih": "01/02/2021",
+        "bitisTarih": "01/06/2021",
+        "durum": "beklemede",
+        "aciklama": "Bir öğrencinin geliştirdiği To Do projesinin tüm fonksiyonları test edilip puanlandırılacaktır."
+      }
+    ]
+  },
+  {
+    "kullaniciNo": 2,
+    "kullaniciAd": "bkullanicisi",
+    "kullaniciSifre": "b123456",
+    "gorevler": [
+      {
+        "id": "6c84fb90-12c4-11e1-840d-7b25c5ee775a",
+        "ad": "Rent a Car sitesi responsive tasarımı yapılacak",
+        "kategori": "Tasarım",
+        "baslangicTarih": "01/03/2021",
+        "bitisTarih": "01/04/2021",
+        "durum": "beklemede",
+        "aciklama": "Arabaların randevu sistemiyle kiralanabildiği bir Rent a Car sitesi için responsive bir arayüz yapılacaktır."
+      },
+      {
+        "id": "8x84fb90-12c4-11e1-840d-7b25c5ee771a",
+        "ad": "Bir pazaryeri sitesinin analizi yapılacaktır",
+        "kategori": "Analiz",
+        "baslangicTarih": "01/02/2021",
+        "bitisTarih": "01/06/2021",
+        "durum": "beklemede",
+        "aciklama": "Bir pazaryeri sitesinin analizi yapılacak ve gereksinimler not alınacaktır."
+      },
+      {
+        "id": "1a84fb90-12c4-11e1-840d-7b25c5ee778n",
+        "ad": "Logo tasarımı yapılacak",
+        "kategori": "Tasarım",
+        "baslangicTarih": "01/01/2021",
+        "bitisTarih": "01/05/2021",
+        "durum": "beklemede",
+        "aciklama": "Bir lokanta için yemek temalı logo tasarımı yapılacaktır."
+      },
+      {
+        "id": "1a84fb90-12c4-11e1-840d-7b25c5ee7712",
+        "ad": "Mobil uygulama tasarımı yapılacak",
+        "kategori": "Tasarım",
+        "baslangicTarih": "01/01/2021",
+        "bitisTarih": "01/06/2021",
+        "durum": "beklemede",
+        "aciklama": "Bir ajans uygulaması için logo tasarımı yapılacaktır."
+      },
+      {
+        "id": "1a84fb90-12c4-11e1-840d-7b25c5ee713n",
+        "ad": "Logo tasarımı yapılacak",
+        "kategori": "Tasarım",
+        "baslangicTarih": "01/01/2021",
+        "bitisTarih": "01/05/2021",
+        "durum": "beklemede",
+        "aciklama": "Bir lokanta için yemek temalı logo tasarımı yapılacaktır."
+      },
+      {
+        "ad": "Yazılım Görevi",
+        "kategori": "Kodlama",
+        "baslangicTarih": "01/26/2021",
+        "bitisTarih": "01/30/2021",
+        "durum": "beklemede",
+        "aciklama": "Program Yazdırılacaktır.",
+        "id": "d56f4c6b-ca20-406f-8ab5-69248e37ead0"
+      }
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+﻿<div class="container-fluid">
+    <div class="row pt-4">
+        <div class="col-sm-4 px-1 mx-auto">
+            
+            <%if(typeof error != "undefined"){%>
+            <div class="alert alert-danger">
+                <p class="alert-text text-center">Kullanıcı adı veya şifre yanlış.</p>
+            </div>
+            <%}%>
+            
+            <div class="table-inprocess table-colon shadow rounded p-2 py-4">
+                <div class="login-form px-2">
+                    
+                    <form id="formLogin" action="#" method="post">
+                        <h2 class="text-center table-title">Giriş yap</h2>
+                    
+                        <div class="form-group">
+                            <input type="text" name="kullaniciAd" class="form-control" placeholder="Kullanıcı adı" required="required"/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="password" name="kullaniciSifre" class="form-control" placeholder="Şifre" required="required"/>
+                        </div>
+                     
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-warning btn-block table-item-font">Giriş yap <i class="fas fa-arrow-right"></i></button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

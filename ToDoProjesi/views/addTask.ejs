@@ -1,0 +1,79 @@
+﻿<div class="container-fluid">
+    
+    <div class="row pt-4">
+     
+        <div class="col-md-4 px-1 mx-auto">
+            <div class="table-inprocess table-colon shadow rounded p-2 py-4">
+                
+                <%if(typeof message != "undefined"){%>
+                <div class="alert alert-success">
+                    <p class="alert-text text-center">Görev eklendi.</p>
+                </div>
+                <%}%>
+              
+                <div class="login-form px-2">
+                    
+                    <form id="formAddTask" action="#" method="post">
+                        <h2 class="text-center table-title">Görev ekle</h2>
+                       
+                        <div class="form-group">
+                            <input type="text" name="ad" class="form-control" placeholder="Görev adı" required="required"/>
+                        </div>
+                       
+                        <div class="form-group">
+                            <select name="kategori" class="form-select form-control" placeholder="Kategori" aria-label="Kategori seçin." required="required">
+                                <option value="" selected>Görev kategorisi</option>
+                                <option value="Analiz">Analiz</option>
+                                <option value="Tasarım">Tasarım</option>
+                                <option value="Kodlama">Kodlama</option>
+                                <option value="Test">Test</option>
+                            </select>
+                        </div>
+               
+                        <div class="form-group">
+                            <input type="text" name="baslangicTarih" class="form-control" placeholder="Başlangıç tarihi" id="baslangicTarih" required="required" readonly />
+								
+							</div>
+                   
+                        <div class="form-group">
+                            <input type="text" name="bitisTarih" class="form-control" placeholder="Bitiş tarihi" id="bitisTarih" required="required" readonly/>
+                        </div>
+                  
+                        <div class="form-group">
+                            <select name="durum" class="form-select form-control" aria-label="Durum seçin." required="required">
+                                <option value="beklemede" selected>Beklemede</option>
+                                <option value="devam ediyor">Devam ediyor</option>
+                                <option value="tamamlandı">Tamamlandı</option>
+                            </select>
+                        </div>
+             
+                        <div class="form-group">
+                            <textarea name="aciklama" class="form-control" placeholder="Görev açıklaması" required="required" rows="3"></textarea>
+                        </div>
+             
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-lg btn-warning btn-block table-item-font">Ekle <i class="fas fa-plus-circle"></i></button>
+                        </div>
+
+                    </form>
+
+              
+                    <script>
+                        window.addEventListener('DOMContentLoaded', function () {
+                            $('#baslangicTarih').datepicker({
+                                format: "dd/mm/yyyy",
+                                language: "tr",
+                                autoclose: true
+                            });
+                            $('#bitisTarih').datepicker({
+                                format: "dd/mm/yyyy",
+                                language: "tr",
+                                autoclose: true
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

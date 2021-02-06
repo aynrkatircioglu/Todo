@@ -1,0 +1,6 @@
+C:\Users\jja\source\repos\ToDoProjesi\ToDoProjesi\obj\Debug\ToDoProjesi.njsprojAssemblyReference.cache
+C:\Users\jja\source\repos\ToDoProjesi\ToDoProjesi\obj\Debug\ToDoProjesi.njsproj.CoreCompileInputs.cache
+C:\Users\jja\source\repos\ToDoProjesi\ToDoProjesi\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\Win10\Desktop\ToDoProjesi\ToDoProjesi\obj\Debug\ToDoProjesi.njsprojAssemblyReference.cache
+C:\Users\Win10\Desktop\ToDoProjesi\ToDoProjesi\obj\Debug\ToDoProjesi.njsproj.CoreCompileInputs.cache
+C:\Users\Win10\Desktop\ToDoProjesi\ToDoProjesi\bin\Microsoft.NodejsTools.WebRole.dll

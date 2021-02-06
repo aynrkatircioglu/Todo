@@ -1,0 +1,130 @@
+﻿<div class="container-fluid px-4">
+    <div class="row pt-4">
+       
+		
+        <div class="col-md-4 px-3 mb-4">
+            <div class="table-inprocess table-colon shadow rounded p-2 py-4">
+                <h4 class="alert-heading table-title"><i class="far fa-calendar-alt"></i> Bekleyen Görevler</h4>
+                <hr class="my-2 bg-warning"/>
+               
+                <% data.gorevler.beklemede.forEach(gorev => { %>
+
+                <div class="gorev-item mb-4 py-2 shadow">
+                    <div class="card table-head-color table-head-box">
+                        <div class="card-header table-item-font">
+                            <h5 class="card-text my-0"><i class="fas fa-signature"></i> Görev adı: </h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.ad %></p>
+                            <h5 class="card-text my-0"><i class="fas fa-stream"></i> Görev kategorisi: </h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.kategori %></p>
+                            <h5 class="card-text my-0"><i class="far fa-clock"></i> Başlangıç tarihi:</h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.baslangicTarih %></p>
+                            <h5 class="card-text my-0"><i class="far fa-clock"></i> Bitiş tarihi:</h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.bitisTarih %></p>
+                            <h5 class="card-text my-0"><i class="far fa-clock"></i> Görev durumu:</h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.durum %></p>
+                        </div>
+                        <div class="card-body py-2">
+                            <h5 class="card-title my-0"><i class="fas fa-quote-right"></i> Görev açıklaması:</h5>
+                            <p class="card-text table-item-font h4 text-dark my-0 py-1"><%= gorev.aciklama %></p>
+                        </div>
+                        <div class="card-footer py-2"/>
+                           
+                            <a href="/tasks/start/<%= gorev.id %>" class="btn btn-warning table-item-font d-block" data-bs-toggle="tooltip" title="Göreve başla!">
+                                <i class="far fa-play-circle"></i> Göreve Başla
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <% }); %>
+
+            </div>
+        </div>
+       
+        <div class="col-md-4 px-2 mb-4" "/>
+            <div class="table-inprocess table-colon shadow rounded p-2 py-4"/>
+                <h4 class="alert-heading table-title"><i class="fas fa-hourglass-half"></i> Devam Eden Görevler</h4>
+                <hr class="my-2 bg-warning"/>
+
+                
+                <% data.gorevler["devam ediyor"].forEach(gorev => { %>
+
+                <div class="gorev-item mb-4 py-2 shadow">
+                    <div class="card table-head-color table-head-box">
+                        <div class="card-header table-item-font">
+                            <h5 class="card-text my-0"><i class="fas fa-signature"></i> Görev adı: </h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.ad %></p>
+                            <h5 class="card-text my-0"><i class="fas fa-stream"></i> Görev kategorisi: </h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.kategori %></p>
+                            <h5 class="card-text my-0"><i class="far fa-clock"></i> Başlangıç tarihi:</h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.baslangicTarih %></p>
+                            <h5 class="card-text my-0"><i class="far fa-clock"></i> Bitiş tarihi:</h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.bitisTarih %></p>
+                            <h5 class="card-text my-0"><i class="far fa-clock"></i> Görev durumu:</h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.durum %></p>
+                        </div>
+                        <div class="card-body py-2">
+                            <h5 class="card-title my-0"><i class="fas fa-quote-right"></i> Görev açıklaması:</h5>
+                            <p class="card-text table-item-font h4 text-dark my-0 py-1"><%= gorev.aciklama %></p>
+                        </div>
+                        <div class="card-footer py-2">
+                            
+                            <a href="/tasks/complete/<%= gorev.id %>" class="btn btn-success table-item-font d-block" data-bs-toggle="tooltip" title="Göreve tamamla!">
+                                <i class="fas fa-check"></i> Görevi tamamla
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <% }); %>
+            </div>
+        </div>
+        <!-- Tamamlanmış görevlerin bulunacağı kutu -->
+        <div class="col-md-4 px-3 mb-4" ">
+            <div class="table-inprocess table-colon shadow rounded p-2 py-4">
+                <h4 class="alert-heading table-title"><i class="fas fa-calendar-check"></i> Tamamlanmış Görevler</h4>
+                <hr class="my-2 bg-warning"/>
+
+                <!--
+                Gönderilen data verisinin tamamlandı dizisi döngüye alınıyor,
+                her bir görev objesi 'gorev' değişkeni olarak döngü içerisinde
+                kullanılıyor.
+
+                Veriler, aşağıda görüldüğü şekilde html sayfasına yazdırılabiliyor.
+                -->
+                <% data.gorevler["tamamlandı"].forEach(gorev => { %>
+
+                <div class="gorev-item mb-4 py-2 shadow">
+                    <div class="card table-head-color table-head-box">
+                        <div class="card-header table-item-font">
+                            <h5 class="card-text my-0"><i class="fas fa-signature"></i> Görev adı: </h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.ad %></p>
+                            <h5 class="card-text my-0"><i class="fas fa-stream"></i> Görev kategorisi: </h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.kategori %></p>
+                            <h5 class="card-text my-0"><i class="far fa-clock"></i> Başlangıç tarihi:</h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.baslangicTarih %></p>
+                            <h5 class="card-text my-0"><i class="far fa-clock"></i> Bitiş tarihi:</h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.bitisTarih %></p>
+                            <h5 class="card-text my-0"><i class="far fa-clock"></i> Görev durumu:</h5>
+                            <p class="card-text h5 text-dark my-0"><%= gorev.durum %></p>
+                        </div>
+                        <div class="card-body py-2">
+                            <h5 class="card-title my-0"><i class="fas fa-quote-right"></i> Görev açıklaması:</h5>
+                            <p class="card-text table-item-font h4 text-dark my-0 py-1"><%= gorev.aciklama %></p>
+                        </div>
+
+                        <!-- Kayıt silinme işlemi, ilgili sayfaya görevin id değeri ile birlikte gönderiliyor -->
+                        <div class="card-footer py-2">
+                            <a href="/tasks/delete/<%= gorev.id %>" class="btn btn-danger table-item-font d-block" data-bs-toggle="tooltip" title="Kaydı sil.">
+                                <i class="fas fa-trash"></i> Kaydı sil
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <% }); %>
+
+            </div>
+        </div>
+    </div>
+</div>
